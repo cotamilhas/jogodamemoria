@@ -1,7 +1,7 @@
 function ScoreBoardGameControl (){
 	var score = 0;
 	var POINT_GAME = 1;
-	var TEXT_SCORE = "Score: "
+	var TEXT_SCORE = "Pontuação: "
 
 	var TOTAL_CORRECT = 10;
 	var corrects = 0;
@@ -15,8 +15,8 @@ function ScoreBoardGameControl (){
 		corrects++;
 		score+= POINT_GAME;
 		if (corrects ==  TOTAL_CORRECT){
-			alert("Fim de Jogo! Seu Score foi " + score);
-		}
+			alert("Acabou o jogo. A tua pontuação foi de " + score);
+		
 	}
 
 	this.decrementScore =  function (){
